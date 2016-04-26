@@ -9,8 +9,8 @@ int main ()
     printf ("Enter a, b, c:");
     scanf ("%lf%lf%lf", &a, &b, &c);
     
-    r = func(a, b, c, &x1, &x2);
-	if (r == NOROOTS)
+    r = dis(a, b, c, &x1, &x2);
+	if (r == ROOT_NO)
 		printf("\nNo roots");
 	if (r == BAD_ARG)
 		printf("\nInvalid arguments");
