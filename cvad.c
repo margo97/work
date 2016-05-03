@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include "func.h"
 
-int main ()
-
+int main()
 {
 	double a, b, c, x1 = 0, x2 = 0;
 	int r;
-    printf ("Enter a, b, c:");
-    scanf ("%lf%lf%lf", &a, &b, &c);
-    
-    r = dis(a, b, c, &x1, &x2);
+	printf ("Enter a, b, c:");
+	scanf ("%lf%lf%lf", &a, &b, &c);
+
+	r = dis(a, b, c, &x1, &x2);
 	if (r == ROOT_NO)
 		printf("\nNo roots");
 	if (r == BAD_ARG)
