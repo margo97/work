@@ -23,7 +23,7 @@ int  dis (double a, double b, double c, double *x1, double *x2)
 	}
 	if (d < 0)
 	{
-	return ROOT_NO;
+		return ROOT_NO;
 	}
 	*x1 = (-b + sqrt(d)) / (2 * a);
 	*x2 = (-b - sqrt(d)) / (2 * a);
